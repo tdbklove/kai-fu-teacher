@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山嵐隱宿 (Misty Haven Retreat)</title>
+  
+  <!-- google 字型 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
+  <!-- icon -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css' integrity='sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==' crossorigin='anonymous'/>
+   
+  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. 頂部導覽列 (Navbar) -->
+  <header>
+    <table>
+      <tr>
+        <td>
+          <a href="#" id="logo">
+            <h3>山嵐隱宿</h3>
+            <span>MISTY HAVEN RETREAT</span>
+          </a>
+        </td>
+        <td>
+          <nav>
+            <a href="#" class="active">探索首頁</a>
+            <a href="#">精選房型</a>
+            <a href="#">預訂行程</a>      
+            <a href="#">會員管家</a>      
+          </nav>
+        </td>
+        <td class="btn-area">
+          <button class="btn-icon">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button class="btn-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+          <button class="btn btn-primary">立即預訂</button>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <!-- 主體 -->
+  <main>
+    <!-- 2. 主視覺 Hero 區塊與搜尋列 (Hero Section & Search Bar) -->
+    <section id="hero">
+      <div class="position-center">
+        <div class="hero-text">
+          <div class="hero-weather badge">
+            <span><i class="fa-solid fa-circle"></i> 森林晨霧季 · 限時預約中</span>
+            <span><i class="fa-solid fa-temperature-low"></i> 19°C 晨霧</span>
+          </div>
+          <p class="subtitle">ARTISANAL RETREAT & PRIVATE KITCHEN</p>
+          <h1 class="big-title">隱身山巒間的靜謐之所</h1>
+          <p class="illustrate mt-1">在海拔一千兩百公尺的林木深處，聆聽風穿過松針的聲音，與晨光一同甦醒。</p>
+        </div>
+        <form action="" method="post" class="hero-from">
+          <table>
+            <tr>
+              <td><i class="icon fa-regular fa-calendar-days"></i></td>
+              <td>
+                <table>
+                  <tr>
+                    <td colspan="3"><label for="start_date">入住與退房日期</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="date" name="start_date" id="start_date"></td>
+                    <td> - </td>
+                    <td><input type="date" name="end_date" id="end_date"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="subtitle">共 2 晚</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="border-left"><i class="icon fa-solid fa-user-group"></i></td>
+              <td>
+                <table>
+                  <tr>
+                    <td colspan="2"><label for="people">同行夥伴</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="number" name="people" id="people" value="2"></td>
+                    <td> 位成人</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="subtitle">專屬山居私宴</td>
+                  </tr>
+                </table>               
+              </td>
+              <td class="border-left"><i class="icon fa-brands fa-houzz"></i></td>
+              <td>
+                <table>
+                  <tr>
+                    <td><label for="room_type">預選房型偏好</label></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select name="room_type" id="room_type" value="1">
+                        <option value="0" disabled>請選擇預設房型</option>
+                        <option value="1">獨立別墅</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="subtitle">配置景觀私泉</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                      <button class="btn btn-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i> 尋覓靜謐空房
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+    <!-- 3. 熱門精選房型 (Signature Suites) -->
+    <section id="suite" class="container">
+      <nav>
+        <button class="badge active">
+          <i class="fa-solid fa-bed"></i>
+          全部房型
+        </button>
+        <button class="badge">
+          <i class="fa-solid fa-umbrella-beach"></i> 山景露台
+        </button>
+        <button class="badge">
+          <i class="fa-solid fa-hot-tub-person"></i> 私人溫泉浴
+        </button>
+        <button class="badge">
+          <i class="fa-solid fa-tree"></i> 森林木屋
+        </button>
+      </nav>
+      <div class="section-title float-clear">
+        <div class="float-start">
+          <p class="subtitle">SIGNATURE SUITES</p>
+          <h1 class="title">熱門精選房型</h1>
+        </div>
+        <div class="float-end">
+          <a href="#" class="text-color">
+            探索全館房型
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <div class="card">
+                <div class="card-img">
+                  <span class="badge bg-primary">獨立景觀浴池</span>
+                  <button class="btn-icon"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://picsum.photos/id/191/600/400/">
+                </div>
+                <div class="card-body">
+                  <div class="float-clear">
+                    <div class="float-start">
+                      <h3>雲霧雙人森林別墅</h3>
+                      <p>25坪 · 特大雙人床 · 私有松林步道陽台</p>
+                    </div>
+                    <div class="float-end">
+                      <i class="fa-solid fa-star"></i>
+                      4.96
+                    </div>
+                  </div>
+                  <div>
+                    <button class="badge bg-muted">含晨光私廚早餐</button>
+                    <button class="badge bg-muted">迎賓手沖高山烏龍</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="float-clear">
+                    <div class="float-start">
+                      <p>每晚 <span class="text-color">NT$ 4,800</span> 起</p>
+                    </div>
+                    <div class="float-end">
+                      <button class="btn bg-muted">細探空間</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <div class="card-img">
+                  <span class="badge bg-primary">獨立景觀浴池</span>
+                  <button class="btn-icon"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://picsum.photos/id/204/600/400/">
+                </div>
+                <div class="card-body">
+                  <div class="float-clear">
+                    <div class="float-start">
+                      <h3>雲霧雙人森林別墅</h3>
+                      <p>25坪 · 特大雙人床 · 私有松林步道陽台</p>
+                    </div>
+                    <div class="float-end">
+                      <i class="fa-solid fa-star"></i>
+                      4.96
+                    </div>
+                  </div>
+                  <div>
+                    <button class="badge bg-muted">含晨光私廚早餐</button>
+                    <button class="badge bg-muted">迎賓手沖高山烏龍</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="float-clear">
+                    <div class="float-start">
+                      <p>每晚 <span class="text-color">NT$ 4,800</span> 起</p>
+                    </div>
+                    <div class="float-end">
+                      <button class="btn bg-muted">細探空間</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <div class="card-img">
+                  <span class="badge bg-primary">獨立景觀浴池</span>
+                  <button class="btn-icon"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://picsum.photos/id/225/600/400/">
+                </div>
+                <div class="card-body">
+                  <div class="float-clear">
+                    <div class="float-start">
+                      <h3>雲霧雙人森林別墅</h3>
+                      <p>25坪 · 特大雙人床 · 私有松林步道陽台</p>
+                    </div>
+                    <div class="float-end">
+                      <i class="fa-solid fa-star"></i>
+                      4.96
+                    </div>
+                  </div>
+                  <div>
+                    <button class="badge bg-muted">含晨光私廚早餐</button>
+                    <button class="badge bg-muted">迎賓手沖高山烏龍</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="float-clear">
+                    <div class="float-start">
+                      <p>每晚 <span class="text-color">NT$ 4,800</span> 起</p>
+                    </div>
+                    <div class="float-end">
+                      <button class="btn bg-muted">細探空間</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!-- 4. 深居山林的時光體驗 (Local Experiences) -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-title float-clear">
+          <div class="float-start">
+            <p class="subtitle">LOCAL EXPERIENCES · 住客專屬預約</p>
+            <h1 class="title">深居山林的時光體驗</h1>
+          </div>
+          <div class="float-end">
+            <p class="text-main">隨四季流轉的日常慢節奏，由專屬嚮導與私廚職人親自引領，品嚐屬於山林的沉靜氣味。</p>
+          </div>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td>
+                <div class="card">
+                  <div class="card-img">
+                    <button class="btn bg-dark">07:00 AM</button>
+                    <img src="https://picsum.photos/id/12/600/400/">
+                  </div>
+                  <div class="card-body">
+                    <h3>晨光瑜伽散步</h3>
+                    <p>松針林徑深呼吸，在清晨微涼的芬多精中舒展甦醒。</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="float-clear">
+                      <span class="float-start">時長 60 分鐘</span>
+                      <span class="float-end">房客免費</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="card-img">
+                    <button class="btn bg-dark">07:00 AM</button>
+                    <img src="https://picsum.photos/id/52/600/400/">
+                  </div>
+                  <div class="card-body">
+                    <h3>晨光瑜伽散步</h3>
+                    <p>松針林徑深呼吸，在清晨微涼的芬多精中舒展甦醒。</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="float-clear">
+                      <span class="float-start">時長 60 分鐘</span>
+                      <span class="float-end">房客免費</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="card-img">
+                    <button class="btn bg-dark">07:00 AM</button>
+                    <img src="https://picsum.photos/id/55/600/400/">
+                  </div>
+                  <div class="card-body">
+                    <h3>晨光瑜伽散步</h3>
+                    <p>松針林徑深呼吸，在清晨微涼的芬多精中舒展甦醒。</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="float-clear">
+                      <span class="float-start">時長 60 分鐘</span>
+                      <span class="float-end">房客免費</span>
+                    </div>
+                  </div>
+                </div>                
+              </td>
+              <td>
+                <div class="card">
+                  <div class="card-img">
+                    <button class="btn bg-dark">07:00 AM</button>
+                    <img src="https://picsum.photos/id/92/600/400/">
+                  </div>
+                  <div class="card-body">
+                    <h3>晨光瑜伽散步</h3>
+                    <p>松針林徑深呼吸，在清晨微涼的芬多精中舒展甦醒。</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="float-clear">
+                      <span class="float-start">時長 60 分鐘</span>
+                      <span class="float-end">房客免費</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- 5. 主理人故事與經營理念 (Our Philosophy) -->
+    <section id="philosophy" class="container">
+      <table>
+        <tr>
+          <td>
+            <div class="card">
+              <div class="card-img">
+                <img src="https://picsum.photos/id/338/400/500/">
+                <div class="section-title">
+                  <p class="subtitle text-light">FOUNDERS & CHEF</p>
+                  <h3 class="title text-white">主理人的話：林氏夫婦</h3>
+                  <p class="illustrate mt-1">
+                    「我們花了七年時間在山裡種樹、引泉，只是想為疲於奔忙的靈魂，留下一盞隨時等候回家的溫暖燈火。」
+                  </p>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div>
+              <div class="section-title">
+                <p class="subtitle">OUR PHILOSOPHY</p>
+                <h3 class="title">山嵐隱宿創辦人 暨 私廚掌勺</h3>
+                <p class="illustrate mt-1">
+                  十年前告別繁忙都市，移居南投深山。堅持順應二十四節氣料理在地鮮物，以山泉、原木為媒介，讓來到山嵐的每位旅人都能慢下呼吸，重拾感官的敏銳與清澈。
+                </p>
+              </div>
+              <table>
+                <tr>
+                  <td>
+                    <div class="card">
+                      <div class="card-body">
+                        <div><i class="icon fa-solid fa-utensils"></i></div>
+                        <h5>無菜單私廚</h5>
+                        <p>採集在地當令食材，每日手寫當日限定私饌。</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="card">
+                      <div class="card-body">
+                        <div><i class="icon fa-solid fa-spa"></i></div>
+                        <h5>天然地熱溫泉</h5>
+                        <p>獨門引流天然碳酸泉，溫潤檜木舒解筋骨壓力。</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="card">
+                      <div class="card-body">
+                        <div><i class="icon fa-solid fa-headset"></i></div>
+                        <h5>管家一對一</h5>
+                        <p>專屬行程規劃，靜音隱私照料每個山居時刻。</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <div class="card">
+                <div class="card-body float-clear">
+                  <div class="float-start">
+                    <i class="btn-icon fa-regular fa-circle-check"></i>
+                    <span>精品永續旅宿認證 · 綠色建築友善獎</span>
+                  </div>
+                  <button class="btn btn-primary float-end">
+                    閱讀我們的山居筆記
+                    <i class="fa-solid fa-book"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- 6. 電子報訂閱區塊 (Journal Subscription) -->
+    <section id="subscription" class="container">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tr>
+              <td>
+                <p class="subtitle">JOURNAL SUBSCRIPTION</p>
+                <h3 class="title">接收節氣私廚菜單與山林手記</h3>
+                <p class="illustrate mt-1">每月農曆初一寄送當季旬味預報、季節限定隱宿空房釋出以及專屬住客優惠。</p>
+              </td>
+              <td>
+                <form action="" method="post">
+                  <input type="text" name="email" placeholder="請輸入您的電子郵件地址">
+                  <input type="submit" value="訂閱手記" class="btn btn-primary">
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 7. 頁尾 (Footer) -->
+  <footer>
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            <a href="#" id="logo">
+              <h3>山嵐隱宿</h3>
+              <span>Misty Haven Retreat & Private Kitchen</span>
+            </a>
+          </td>
+          <td>
+            <nav>
+              <a href="#">首頁</a>
+              <a href="#">山居私邸</a>
+              <a href="#">節氣膳食</a>
+              <a href="#">山林私塾</a>
+            </nav>
+          </td>
+        </tr>
+        <tr>
+          <td>© 2025 Misty Haven Retreat. 慢居隱世，靜心之所。</td>
+          <td>山嵐隱宿文化旅宿事業</td>
+        </tr>
+      </table>
+    </div>
+  </footer>
+</body>
+</html>
