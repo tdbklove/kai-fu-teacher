@@ -192,6 +192,3 @@
 - **版權聲明與營運資訊**：
   - © 2025 Misty Haven Retreat. 慢居隱世，靜心之所。
   - 山嵐隱宿文化旅宿事業
-
-
-  https://lh3.googleusercontent.com/aida-public/AB6AXuATbg-aRc1mmxjPF62WnQLh8VojVZk9CXbrpSR0FGsXT-eUhqdHoEN68RwjpWvp5YRHy3JqmiJ5gGu6IYiq_yzgO7ZA2sahLFxxbsu0K2bZFuU9sDmY8wxfEt_3530UcHMeiRrJn1WtyOhuYmm4l9NTJeDGhIK7x5eqKe_mFsujslqX3YqMSwkbwzZLckvFvolcdsS9gcTUnAb9ojae_Sp35Orkku_sIAAu-bObxthcZ0g7CUbzMzkcPg
